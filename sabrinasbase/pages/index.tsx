@@ -1,10 +1,11 @@
-import Head from 'next/head';
+import Vis from "../components/Cube";
+import UserName from "../components/UserName";
 
 const Home = () => {
   return (
-    <div>
-    </div>
-  )
-}
+    <>
+    </>
+  );
+};
 
 export default Home;
