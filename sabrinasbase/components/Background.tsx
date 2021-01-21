@@ -3,16 +3,13 @@ import Particles from "react-tsparticles";
 import "../styles/components/Background.module.scss";
 
 const Background = () => {
-  const [height, setHeight] = useState("");
-
-  useEffect(() =>{
-    setHeight("100%");
-  })
-
   return (
     <div className="background">
       <Particles
-        height={height}
+        style={{
+          position: "absolute",
+        }}
+        height={"100%"}
         options={{
           background: {
             color: {
