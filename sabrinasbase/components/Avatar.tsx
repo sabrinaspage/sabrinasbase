@@ -1,15 +1,15 @@
 import { ReactNode } from "react";
-import styles from "../styles/components/Half.module.scss";
-import TempAvatar from "../public/avatar.jpg"
+import { DEFAULT_AVATAR } from "../constants/CONSTANTS";
+import styles from "../styles/components/Avatar.module.scss";
 
 interface Props {
   imgSrc?: string;
 }
 
-const Avatar: React.FC<Props> = ({ imgSrc = "TempAvatar" }) => {
+const Avatar: React.FC<Props> = ({ imgSrc = DEFAULT_AVATAR }) => {
   return (
     <>
-      <img src={imgSrc}/>
+      <img src={imgSrc} className={""}/>
     </>
   );
 };
