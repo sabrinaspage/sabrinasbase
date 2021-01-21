@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
-import styles from '../styles/components/LeftHalf.module.scss';
+import styles from '../styles/components/RightHalf.module.scss';
 
 interface Props {
   children: ReactNode;
 }
 
-const LeftHalf: React.FC<Props> = ({ ...props }) => {
+const RightHalf: React.FC<Props> = ({ ...props }) => {
   const { children } = props;
   return <div className={styles.half}>{children}</div>;
 };
 
-export default LeftHalf;
+export default RightHalf;
