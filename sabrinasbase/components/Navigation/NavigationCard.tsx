@@ -8,9 +8,9 @@ interface Props {
 const NavigationCard: React.FC<Props> = ({ ...props }) => {
   const { name, page } = props;
   return (
-    <button className={styles.item} onClick={() => null}>
+    <a className={styles.item} onClick={() => null}>
       {name}
-    </button>
+    </a>
   );
 };
 

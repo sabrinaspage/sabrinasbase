@@ -1,7 +1,10 @@
 .container {
   margin-top: 10px;
-  position: relative;
+  padding-left: 10%;
+  position: static;
   display: flex;
+  bottom: 0;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
