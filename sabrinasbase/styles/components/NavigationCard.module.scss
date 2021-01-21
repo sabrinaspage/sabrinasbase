@@ -1,8 +1,20 @@
 .item {
-    background-color: transparent;
-    border-color: transparent;
-    color: rgb(25, 134, 25);
-    flex: 0 200px;
-    min-height: 20%;
-    margin: 10px 20px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  flex: 1;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 115%;
+}
+
+.item a {
+  color: black;
+}
+
+.item:hover{
+  opacity: 30%;
+  transition: 0.2s ease-out;
+}
