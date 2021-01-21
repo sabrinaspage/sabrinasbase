@@ -1,9 +1,9 @@
-import Vis from "../components/Cube";
-import UserName from "../components/UserName";
+import Background from "../components/Background";
 
 const Home = () => {
   return (
     <>
+      <Background/>
     </>
   );
 };
