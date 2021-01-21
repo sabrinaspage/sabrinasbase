@@ -1,15 +1,22 @@
+import { useEffect, useState } from "react";
 import Particles from "react-tsparticles";
-import '../styles/Background.module.scss';
+import "../styles/components/Background.module.scss";
 
 const Background = () => {
+  const [height, setHeight] = useState(0);
+
+  useEffect(() =>{
+    setHeight(window.innerHeight - 10);
+  })
+
   return (
-    <div className="styles.div">
+    <div className="background">
       <Particles
-        id="tsparticles"
+        height={height}
         options={{
           background: {
             color: {
-              value: "#fff",
+              value: "rgb(255, 255, 255)",
             },
           },
           fpsLimit: 60,
@@ -44,7 +51,7 @@ const Background = () => {
           },
           particles: {
             color: {
-              value: ["#fff", "#f00", "#0f0", "#00f"],
+              value: ["#FFFF00", "#f00", "#0f0", "#00f"],
             },
             links: {
               color: "#A0A0A0",
@@ -69,7 +76,7 @@ const Background = () => {
                 enable: true,
                 value_area: 800,
               },
-              value: 80,
+              value: 90,
             },
             opacity: {
               value: 0.5,
