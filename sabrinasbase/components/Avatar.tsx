@@ -2,6 +2,9 @@ import { ReactNode } from "react";
 import { DEFAULT_AVATAR } from "../constants/CONSTANTS";
 
 import styles from "../styles/components/Avatar.module.scss";
+import randomColor from 'random-color';
+
+var random = randomColor();
 
 interface Props {
   imgSrc?: string;
@@ -12,7 +15,7 @@ interface Props {
 const Avatar: React.FC<Props> = ({ imgSrc = DEFAULT_AVATAR, width = 500, height = 500 }) => {
   return (
     <>
-      <img src={imgSrc} className={styles.img} style={{borderColor: rgb(random(255), random(255), random(255));}} width={width} height={height}/>
+      <img src={imgSrc} className={styles.img} style={{borderColor: random.hexString()}} width={width} height={height}/>
     </>
   );
 };
