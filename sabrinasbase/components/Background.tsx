@@ -3,10 +3,10 @@ import Particles from "react-tsparticles";
 import "../styles/components/Background.module.scss";
 
 const Background = () => {
-  const [height, setHeight] = useState(0);
+  const [height, setHeight] = useState("");
 
   useEffect(() =>{
-    setHeight(window.innerHeight - 10);
+    setHeight("100%");
   })
 
   return (
