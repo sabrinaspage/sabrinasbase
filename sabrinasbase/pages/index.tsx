@@ -6,9 +6,10 @@ import { NavCard } from "../types/types";
 import styles from "../styles/components/Avatar.module.scss";
 
 let data: Array<NavCard> = [
-  { name: "About Me", page: "", color: "#f00" },
-  { name: "My Portfolio", page: "", color: "#0f0" },
-  { name: "Contact Me", page: "", color: "#00f" },
+  { name: "About Me", page: "about", color: "#f00" },
+  { name: "My Portfolio", page: "portfolio", color: "#0f0" },
+  { name: "My Resume", page: "resume", color: "#0f0" },
+  { name: "Contact Me", page: "socials", color: "#00f" },
 ];
 
 const Home = () => {
