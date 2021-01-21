@@ -10,8 +10,8 @@ const Layout: React.FC<Props> = ({ ...props }) => {
   const { children } = props;
   return (
     <>
-      <RightHalf>{children}</RightHalf>
       <Background />
+      <RightHalf>{children}</RightHalf>
     </>
   );
 };

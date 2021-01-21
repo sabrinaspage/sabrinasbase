@@ -17,7 +17,7 @@ const Home = () => {
       <div className={styles.avatarDiv}>
         <Avatar imgSrc={"/me.jpg"} />
       </div>
-      <NavigationBar data={data} marginTop={20}/>
+      <NavigationBar data={data} marginTop={20} />
     </Layout>
   );
 };

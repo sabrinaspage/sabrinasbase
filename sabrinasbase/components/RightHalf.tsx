@@ -3,6 +3,7 @@ import styles from '../styles/components/RightHalf.module.scss';
 
 interface Props {
   children: ReactNode;
+  height?: number | string;
 }
 
 const RightHalf: React.FC<Props> = ({ ...props }) => {

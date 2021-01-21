@@ -1,8 +1,11 @@
 .half {
   border-left: 15px red dashed;
-  position: fixed;
+  position: absolute;
+  overflow-y:auto;
+  z-index: 1;
   color: red;
   background-color: white;
+  top: 0;
   right: 0;
   height: 100%;
   width: 70%;
