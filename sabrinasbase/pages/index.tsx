@@ -1,9 +1,13 @@
 import Background from "../components/Background";
+import Half from "../components/Half";
 
 const Home = () => {
   return (
     <>
-      <Background/>
+      <Half>
+         
+      </Half>
+      <Background />
     </>
   );
 };

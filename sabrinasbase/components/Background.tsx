@@ -1,8 +1,9 @@
 import Particles from "react-tsparticles";
+import '../styles/Background.module.scss';
 
 const Background = () => {
   return (
-    <>
+    <div className="styles.div">
       <Particles
         id="tsparticles"
         options={{
@@ -36,7 +37,7 @@ const Background = () => {
                 quantity: 4,
               },
               repulse: {
-                distance: 200,
+                distance: 150,
                 duration: 0.4,
               },
             },
@@ -74,7 +75,7 @@ const Background = () => {
               value: 0.5,
             },
             shape: {
-              type: "triangle",
+              type: ["triangle", "square", "circle"],
             },
             size: {
               random: true,
@@ -84,7 +85,7 @@ const Background = () => {
           detectRetina: true,
         }}
       />
-    </>
+    </div>
   );
 };
 
