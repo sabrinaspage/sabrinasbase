@@ -1,14 +1,10 @@
-import Background from "../components/Background";
-import Half from "../components/Half";
+import Layout from '../components/Layout';
 
 const Home = () => {
   return (
-    <>
-      <Half>
-         
-      </Half>
-      <Background />
-    </>
+    <Layout>
+    
+    </Layout>
   );
 };
 
