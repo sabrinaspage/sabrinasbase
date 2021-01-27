@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 import "../styles/components/Background.module.scss";
 

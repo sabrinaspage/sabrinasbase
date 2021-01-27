@@ -1,13 +1,19 @@
 import React from "react";
-import Avatar from "../components/Avatar";
 import Layout from "../components/Layout";
 import NavigationBar from "../components/Navigation/NavigationBar";
 import { NavCard } from "../types/types";
-import styles from "../styles/components/Avatar.module.scss";
+
+let data: Array<NavCard> = [
+  { name: "Main", page: "", color: "#f00" },
+  { name: "About Me", page: "about", color: "#0f0" },
+  { name: "My Portfolio", page: "portfolio", color: "#00f" },
+  { name: "My Resume", page: "resume", color: "#0f0" },
+];
 
 const Home = () => {
   return (
     <Layout>
+      <NavigationBar data={data} marginTop={10} />
     </Layout>
   );
 };
