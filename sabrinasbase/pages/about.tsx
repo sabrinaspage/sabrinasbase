@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
 import NavigationBar from "../components/Navigation/NavigationBar";
-import { NavCard } from "../types/types";
+import { AboutMe, NavCard } from "../types/types";
 import SlideUpText from "../components/Text/SlideUpText";
+import AboutList from "../components/AboutList/AboutList";
 
 let data: Array<NavCard> = [
   { name: "Main", page: "", color: "#f00" },
@@ -11,28 +12,39 @@ let data: Array<NavCard> = [
   { name: "Contact Me", page: "socials", color: "#00f" },
 ];
 
+let aboutMe: Array<AboutMe> = [
+  { descriptor: "College", description: "City College of New York" },
+  { descriptor: "Majoring In", description: "B.S. of Computer Science" },
+  { descriptor: "College Year", description: "Third-Year" },
+  { descriptor: "Birthday", description: "March 29, 2000" },
+  { descriptor: "Pronouns", description: "she/her/hers" },
+  { descriptor: "Nationality", description: "American" },
+  { descriptor: "Ethnicity", description: "Dominican" },
+  {
+    descriptor: "Programming Languages",
+    description: "TypeScript, Python, JavaScript, C#, C++, Java",
+  },
+  {
+    descriptor: "Technologies",
+    description:
+      "Git, Github, REST API, React, Tailwind CSS, BeautifulSoup, NextJS, Typeorm",
+  },
+  {
+    descriptor: "Operating Systems",
+    description: "Windows, Arch Linux, Ubuntu",
+  },
+];
+
 const Home = () => {
   return (
     <Layout>
-      <NavigationBar data={data} marginTop={10} />
+      <NavigationBar data={data} />
       <div
         style={{
-          position: "fixed",
+          width: "100%",
         }}
       >
-        <SlideUpText>
-          I am currently a third-year student at the City College of New York,
-          currently pursuing a B.S in Computer Science.
-          <br></br>I love the field of technology and want to explore as many
-          fields as possible.
-          <br></br>
-          Languages: TypeScript, Python, JavaScript, C#, C++, Java
-          <br></br>
-          Technologies: Git, Github, REST API, React, Tailwind CSS,
-          BeautifulSoup, NextJS, Typeorm
-          <br></br>
-          Operating Systems: Windows, Arch Linux, Ubuntu
-        </SlideUpText>
+        <AboutList data={aboutMe}></AboutList>
       </div>
     </Layout>
   );

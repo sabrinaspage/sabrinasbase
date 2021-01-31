@@ -1,0 +1,20 @@
+.item {
+  display: flex;
+  flex: 1;
+}
+
+.item a {
+  color: black;
+}
+
+.title {
+  background-image: linear-gradient(to right, rgba(73, 73, 73, 0) 50%, rgb(241, 237, 180) 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  text-decoration: none;
+  color:black;
+  transition: background-position 0.5s ease-out;
+}
+.title:hover {
+  background-position: -99.99% 0;
+}
