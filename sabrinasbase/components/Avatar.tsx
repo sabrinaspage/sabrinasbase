@@ -33,7 +33,7 @@ const Avatar: React.FC<Props> = ({
       var randomNumber = Math.floor(Math.random() * 11);
       count = (count + randomNumber) % colours.length;
       setColor(colours[count]);
-    }, 3000);
+    }, 1000);
   }, []);
 
   return (
