@@ -1,16 +1,18 @@
-import { redirect } from "next/dist/next-server/server/api-utils";
 import { ReactNode } from "react";
 import styles from "../../styles/components/Text.module.scss";
+import TextAlignProperty from 'csstype'
 
 interface Props {
   children: ReactNode;
   fontSize?: string;
   color?: string;
+  textAlign?: TextAlignProperty.Property.TextAlign;
 }
 
 const Text: React.FC<Props> = ({
-  fontSize = "34px",
+  fontSize = "12px",
   color = "black",
+  textAlign = "center",
   ...props
 }) => {
   const { children } = props;
@@ -20,6 +22,7 @@ const Text: React.FC<Props> = ({
       style={{
         fontSize: fontSize,
         color: color,
+        textAlign: textAlign,
       }}
     >
       {children}
