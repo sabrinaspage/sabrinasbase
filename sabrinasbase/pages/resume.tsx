@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import NavigationBar from "../components/Navigation/NavigationBar";
 import { NavCard } from "../types/types";
+import Pdf from "../components/Pdf";
 
 let data: Array<NavCard> = [
   { name: "Main", page: "", color: "#f00" },
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <Layout>
       <NavigationBar data={data} marginTop={10} />
+      <Pdf pdfURL={"/Sabrina_Reyes_Resume_2021.pdf"} />
     </Layout>
   );
 };
