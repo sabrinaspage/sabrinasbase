@@ -5,9 +5,9 @@ interface Props {
   children: ReactNode;
 }
 
-const RightHalf: React.FC<Props> = ({ ...props }) => {
+const Text: React.FC<Props> = ({ ...props }) => {
   const { children } = props;
   return <div className={styles.half}>{children}</div>;
 };
 
-export default RightHalf;
+export default Text;
