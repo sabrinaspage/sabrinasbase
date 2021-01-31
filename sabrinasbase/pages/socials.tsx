@@ -13,7 +13,7 @@ let data: Array<NavCard> = [
 const Home = () => {
   return (
     <Layout>
-      <NavigationBar data={data} marginTop={10} />
+      <NavigationBar data={data} />
     </Layout>
   );
 };

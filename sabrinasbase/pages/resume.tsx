@@ -14,7 +14,7 @@ let data: Array<NavCard> = [
 const Home = () => {
   return (
     <Layout>
-      <NavigationBar data={data} marginTop={10} />
+      <NavigationBar data={data}/>
       <Pdf pdfURL={"/Sabrina_Reyes_Resume_2021.pdf"} />
     </Layout>
   );
