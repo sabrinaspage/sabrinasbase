@@ -3,3 +3,8 @@ export interface NavCard {
     name: string;
     color: string;
 }
+
+export interface AboutMe {
+    descriptor: string;
+    description: string;
+}
