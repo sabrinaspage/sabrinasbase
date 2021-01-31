@@ -5,9 +5,12 @@ import NavigationBar from "../components/Navigation/NavigationBar";
 import { NavCard } from "../types/types";
 import styles from "../styles/components/Avatar.module.scss";
 
-let data: Array<NavCard> = [
+let top: Array<NavCard> = [
   { name: "About Me", page: "about", color: "#f00" },
   { name: "My Portfolio", page: "portfolio", color: "#0f0" },
+];
+
+let bottom: Array<NavCard> = [
   { name: "My Resume", page: "resume", color: "#0f0" },
   { name: "Contact Me", page: "socials", color: "#00f" },
 ];
@@ -15,10 +18,11 @@ let data: Array<NavCard> = [
 const Home = () => {
   return (
     <Layout>
+      <NavigationBar data={top} marginTop={40} marginBottom={-50} />
       <div className={styles.avatarDiv}>
         <Avatar imgSrc={"/me.jpg"} />
       </div>
-      <NavigationBar data={data} marginTop={20} />
+      <NavigationBar data={bottom} marginTop={40} />
     </Layout>
   );
 };
