@@ -13,7 +13,7 @@ interface Props {
 
 const NavigationBar: React.FC<Props> = ({
   data = [],
-  marginTop = 0,
+  marginTop = 10,
   marginBottom = 0,
   marginLeft = -40,
   marginRight = 0,
